@@ -1,3 +1,19 @@
+# The int() function in Python can convert a string to an integer only if the string represents a valid integer (in base 10 by default).
+# and int() cannot directly convert a string with a decimal point
+# These work:
+int("25")       # → 25 (only digits)
+int(" -5 ")     # → -5 (digits with optional +/- and spaces)
+int("100")      # → 100 (digits only)
+
+# These FAIL:
+int("nasif")    # → ValueError (contains letters)
+int("25.5")     # → ValueError (contains decimal point)
+int("10 20")    # → ValueError (contains space between numbers)
+int("")         # → ValueError (empty string)
+
+
+
+
 age = 34
 name = "John Doe"
 is_student = False
