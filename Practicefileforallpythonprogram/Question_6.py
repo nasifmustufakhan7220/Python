@@ -1,4 +1,0 @@
-a= int(input("Enter first number: "))
-b= int(input("Enter second number: "))
-
-print("a + b = ", a + b, "\n", "a - b = ", a-b, "\n", "a * b = ", a*b, "\n", "a / b = ", a/b)
