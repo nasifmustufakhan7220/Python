@@ -81,6 +81,7 @@ is_verified = True
      print("Login successful")
 
 '''
+'''
 user_name = "Tobias"
 pass_word = "seceret123"
 is_verified = True
@@ -96,3 +97,71 @@ if(len(user_name) > 0 and len(user_name) <= 6) :
         print("Password required")
 else :
     print("Username required")
+
+
+score = 92
+extra_credit = 5
+
+if score >= 90 :
+    if extra_credit > 0 :
+        print("A+ grade")
+    else : 
+        print("A grade")
+elif score >= 80 :
+    print("B grade")
+else :
+    print("C grade or below")
+
+'''
+'''
+day = ""
+
+match day :
+    case 1 :
+        print("Monday")
+    case 2 :
+        print("Tuesday")
+    case 3 :
+        print("Wednesday")
+    case 4 :
+        print("Thrusday")
+    case 5 :
+        print("Friday")
+    case 6 :
+        print("Saturday")
+    case 7 :
+        print("Sunday")
+    case _ :
+        print("Error")
+'''
+'''
+ Combine Values
+ Use the pipe oprator | as an or operator in the case evaluation to check for more than one value match in one case:
+'''
+# day = 1
+
+# match day :
+#     case 1 | 2 | 3 | 5 :
+#         print("Today is holiday")
+#     case 4 | 6 :
+#         print("Today is weekdays")
+
+
+'''
+We can also add {if} statements in the case evaluation as an extra condition-check: -
+- Guards make cases unique.
+- Without guards, repeating the same pattern causes an error.
+- With guards, Python checks the extra condition to decide which case to run.
+
+'''
+
+month = 5
+day = 4
+
+match day :
+    case 1 | 2 | 3 | 4 | 5 if month == 4 :
+                print("A weekday in April")
+    case 1 | 2 | 3 | 4 | 5 if month == 5 :
+                print("A weekday in May")
+    case _ :
+        print("No match")
