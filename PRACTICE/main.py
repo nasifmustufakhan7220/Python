@@ -1,13 +1,13 @@
 # print("I am", 25, "years old.")
 # Variable names are case sencetive. It's mean that if i create variables like these way,
-age = 23
-Age = 23
+# age = 23
+# Age = 23
 # print(age, Age) # Output will be ===> 23 , 23
 #  these two variable are completely two different variable.
 
 # In python, we can create and assign multiple variable in one single line. Like this way :
 
-name, age, height = "Nasif", 25, 5.9
+# name, age, height = "Nasif", 25, 5.9
 
 # print(name, age, height, sep='\n') # Output will be ====>> 
 # Nasif 
@@ -24,46 +24,46 @@ name, age, height = "Nasif", 25, 5.9
 
 # In python we can assign same value in multiple variables in one single line. For example :
 
-nasif_Age = srabon_Age = turjo_Age = 23
+# nasif_Age = srabon_Age = turjo_Age = 23
 # print(nasif_Age, srabon_Age, turjo_Age, sep='\n')
 
 
 
 
 # x = "awesome" # This is a global variable. And this variable can be used anywhere in this file, both inside a function and out side a function.
-def myfunc () :
-    print("Python is " + x)
+# def myfunc () :
+#     print("Python is " + x)
 
 # myfunc()
 # If we create a variable outside any block or like below the x variable, it will be called as a global variable, which can be used from any where and we can use that global variable inside a block scope also. 
-x = "awesome" 
+# x = "awesome" 
 
-def function1 () :
-    # If we create a variable inside a function block or block, this variable will be local and it can not be used outside the block scope. Like below the x variable, which is only use inside that scope.
-    x = "fantastic"
-    print("Python is " + x)
+# def function1 () :
+#     # If we create a variable inside a function block or block, this variable will be local and it can not be used outside the block scope. Like below the x variable, which is only use inside that scope.
+#     x = "fantastic"
+#     print("Python is " + x)
 
 # function1()
 
 # print("Python is " + x)
 
 
-def function2() :
-    # Normally, when we carete a variable inside a function, that variable is a local variable and it can onle be used from inside a local scope, but if we use "global" keyword infornt of any variable, that varible will become a global variable and it can be used from any where in that file. Like below the varible a.
-    global a
-    a = "fantastic"
+# def function2() :
+#     # Normally, when we carete a variable inside a function, that variable is a local variable and it can onle be used from inside a local scope, but if we use "global" keyword infornt of any variable, that varible will become a global variable and it can be used from any where in that file. Like below the varible a.
+#     global a
+#     a = "fantastic"
 
-function2();
+# function2();
 
 # print("Python is " + a)
 
 
-num = 23
+# num = 23
 
-def numFunction () :
-    # If we want to change global variable's value inside from a function scope, we can do it by using "global" keyword. Like the below code:
-   global num
-   num = "23"
+# def numFunction () :
+#     # If we want to change global variable's value inside from a function scope, we can do it by using "global" keyword. Like the below code:
+#    global num
+#    num = "23"
 #numFunction()
 #print("My age is ", num) # output type is number.
 #print("My age is " + num) # output type is string.
@@ -96,38 +96,38 @@ username = "Emil"
 
 # Conditional Expression (sometimes known asa "ternary operator"): One-line if/else that prints a value
 
-a = 2
-b = 330
+# a = 2
+# b = 330
 # print("A") if a < b else print("B")
 
 # Assign a if/else statement into a variable : 
 
-x = 10
-b = 20
+# x = 10
+# b = 20
 
-bigger = a if a > b else b
+# bigger = a if a > b else b
 # print("Bigger is ", bigger)
 
 
 # Multiple condition on One Line
 
-x1 = 330
-x2 = 330
+# x1 = 330
+# x2 = 330
 
 # print("x1") if x1 > x2 else print ("=") if x1 == x2 else print ("x2")
 
 
-y1 = 15
-z1 = 20
+# y1 = 15
+# z1 = 20
 
-max_value = y1 if y1 > z1 else z1
+# max_value = y1 if y1 > z1 else z1
 # print("Maximum value : ", max_value)
 
 
 # Setting a default value:
 
-Username = ""
-display_name = Username if Username else "Guest"
+# Username = ""
+# display_name = Username if Username else "Guest"
 # print("Welcome,", display_name)
 
 
@@ -137,18 +137,18 @@ display_name = Username if Username else "Guest"
 '''
 You can combine multiple logical operators in a single expression. Python evaluates not first, then and, then or.
 '''
-age = 25
-is_student = True
-has_discount_code = False
+# age = 25
+# is_student = True
+# has_discount_code = False
 
 
 # if (age < 18 or age > 65) and not is_student or has_discount_code :
 #     print("Discount applies!")
 
 
-temperature = 25
-is_raining = True
-is_weekend = True
+# temperature = 25
+# is_raining = True
+# is_weekend = True
 
 # if(temperature > 20 and not is_raining) or is_weekend :
 #     print("Greate day for outdoor activities!")
@@ -267,14 +267,16 @@ Even strings are iterable objects, they contain a sequence of characters:
 # Loop through the letters in the word 
 # print one by one using their length
 def funcL(furits):
-    x = ""
+    y = ""
     for furit in furits :
-        x += furit   
-    return x
+        y += furit
+    return y
 
-# print(funcL("banana")[2])
-# for furit in range(len("banana")) :
-#     print(furit)
+
+for furit in range(len(funcL("banana"))) :
+    print(furit)
+
+
 '''
 # BREAK Statement
 '''
@@ -336,11 +338,11 @@ The  range() function defaults to increament the sequence by 1, however it is po
 # else :
 #     print("It will not excecuted")
 
-adj = ['red', 'big', 'tasty']
-furits = ['apple', 'banana', 'cherry']
+# adj = ['red', 'big', 'tasty']
+# furits = ['apple', 'banana', 'cherry']
 
-for x in adj:
-    for y in furits:
-        print(x,y)
+# for x in adj:
+#     for y in furits:
+#         print(x,y)
 
 
